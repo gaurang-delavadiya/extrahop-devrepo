@@ -1,0 +1,19 @@
+rule extrahop_revealx_low_severity {
+  meta:
+    author = "ExtraHop RevealX Team"
+    description = "Detection will be generated for events with a risk score < 30, indicating low severity."
+    severity = "Low"
+
+  events:
+    $event.metadata.log_type = "EXTRAHOP"
+    $event.metadata.product_name = "RevealX"
+    $event.security_result.priority = "HIGH_PRIORITY"
+    $event.security_result.risk_score < 30
+    $event_risk_score = $event.security_result.risk_score
+
+  outcome:
+    $risk_score = max($event_risk_score)
+
+  condition:
+    $event
+}

@@ -1,0 +1,791 @@
+lookml:
+- dashboard: extrahop_revealx
+  description: ""
+  elements:
+  - col: 8
+    color_application:
+      collection_id: 7c56cc21-66e4-41c9-81ce-a60e1c3967b2
+      options:
+        reverse: false
+        steps: 5
+      palette_id: 5d189dfc-4f46-46f3-822b-bfb0b61777b1
+    column_limit: 50
+    defaults_version: 1
+    dynamic_fields:
+    - _kind_hint: measure
+      _type_hint: number
+      based_on: events__security_result__category_details.events__security_result__category_details
+      expression: ""
+      label: Count of security_result.category_details
+      measure: count_of_security_resultcategory_details
+      type: count_distinct
+    - _kind_hint: measure
+      _type_hint: number
+      based_on: events.metadata__id
+      category: measure
+      expression: ""
+      label: Count
+      measure: count
+      type: count_distinct
+    - _kind_hint: measure
+      _type_hint: number
+      based_on: events.metadata__id
+      category: measure
+      expression: ""
+      label: Count
+      measure: count_1
+      type: count_distinct
+    explore: events_connector
+    fields:
+    - events__security_result__category_details.events__security_result__category_details
+    - count_1
+    filters:
+      events.metadata__log_type: EXTRAHOP
+      events.metadata__product_name: RevealX
+      events__security_result__category_details.events__security_result__category_details: -NULL
+    height: 7
+    hidden_pivots: {}
+    inner_radius: 60
+    label_type: labPer
+    limit: 10
+    listen:
+      Time: events.time_filter
+    model: scn
+    name: Top Categories
+    row: 4
+    series_colors:
+      sec.action: '#1A73E8'
+    sorts:
+    - count_1 desc
+    start_angle: 0
+    title: Top Categories
+    type: looker_pie
+    value_labels: labels
+    width: 8
+  - col: 0
+    column_limit: 50
+    comparison_reverse_colors: false
+    comparison_type: value
+    conditional_formatting_include_nulls: false
+    conditional_formatting_include_totals: false
+    custom_color: '#FFFFFF'
+    custom_color_enabled: true
+    defaults_version: 1
+    dynamic_fields:
+    - _kind_hint: measure
+      _type_hint: number
+      based_on: events__about__security_result.priority
+      expression: ""
+      label: Count of about.security_result.priority
+      measure: count_of_aboutsecurity_resultpriority
+      type: count_distinct
+    - _kind_hint: measure
+      _type_hint: number
+      based_on: events.metadata__id
+      expression: ""
+      label: Count of metadata.id
+      measure: count_of_metadataid
+      type: count_distinct
+    - _kind_hint: measure
+      _type_hint: number
+      based_on: events.metadata__id
+      expression: ""
+      label: Count of metadata.id
+      measure: count_of_metadataid_2
+      type: count_distinct
+    - _kind_hint: measure
+      _type_hint: number
+      based_on: events.metadata__id
+      category: measure
+      expression: ""
+      label: Count
+      measure: count
+      type: count_distinct
+    enable_conditional_formatting: false
+    explore: events_connector
+    fields:
+    - count
+    filters:
+      events.metadata__log_type: EXTRAHOP
+      events.metadata__product_name: RevealX
+      events__security_result.priority_enum_name: '"HIGH_PRIORITY"'
+    header_font_size: 12
+    header_text_alignment: left
+    height: 4
+    hidden_pivots: {}
+    hide_row_totals: false
+    hide_totals: false
+    limit: 1
+    limit_displayed_rows: false
+    listen:
+      Time: events.time_filter
+    model: scn
+    name: Recommended Detection Events
+    row: 0
+    rows_font_size: 12
+    show_comparison: false
+    show_comparison_label: true
+    show_row_numbers: true
+    show_single_value_title: true
+    show_view_names: false
+    size_to_fit: true
+    table_theme: white
+    title: Recommended Detection Events
+    transpose: false
+    truncate_text: true
+    type: single_value
+    width: 8
+  - col: 0
+    color_application:
+      collection_id: 7c56cc21-66e4-41c9-81ce-a60e1c3967b2
+      palette_id: 5d189dfc-4f46-46f3-822b-bfb0b61777b1
+    column_limit: 50
+    conditional_formatting_include_nulls: false
+    conditional_formatting_include_totals: false
+    defaults_version: 1
+    dynamic_fields:
+    - _kind_hint: measure
+      _type_hint: number
+      based_on: events.metadata__id
+      expression: ""
+      label: Count of metadata.id
+      measure: count_of_metadataid
+      type: count_distinct
+    - _kind_hint: measure
+      _type_hint: number
+      based_on: events.metadata__id
+      category: measure
+      expression: ""
+      label: Count
+      measure: count
+      type: count_distinct
+    enable_conditional_formatting: false
+    explore: events_connector
+    fields:
+    - events__security_result.summary
+    - count
+    filters:
+      events.metadata__log_type: EXTRAHOP
+      events.metadata__product_name: RevealX
+      events__security_result.priority_enum_name: '"HIGH_PRIORITY"'
+      events__security_result.summary: -NULL
+    header_font_color: '#000000'
+    header_font_size: "14"
+    header_text_alignment: left
+    height: 7
+    hidden_pivots: {}
+    hide_row_totals: false
+    hide_totals: false
+    limit: 10
+    limit_displayed_rows: false
+    limit_displayed_rows_values:
+      first_last: first
+      num_rows: 0
+      show_hide: hide
+    listen:
+      Time: events.time_filter
+    minimum_column_width: 75
+    model: scn
+    name: Top Recommended Detection Events
+    row: 4
+    rows_font_size: "12"
+    series_cell_visualizations:
+      count_of_metadataid:
+        is_active: false
+    series_column_widths:
+      events__security_result.summary: 240
+    series_labels:
+      count_of_metadataid: Count
+      events__security_result.summary: Detection Title
+    series_text_format:
+      count:
+        align: left
+      count_of_metadataid:
+        align: left
+      events__security_result.summary:
+        align: left
+    show_row_numbers: false
+    show_row_totals: true
+    show_sql_query_menu_options: false
+    show_totals: true
+    show_view_names: true
+    size_to_fit: true
+    sorts:
+    - count desc 0
+    table_theme: editable
+    title: Top Recommended Detection Events
+    transpose: false
+    truncate_column_names: false
+    truncate_header: false
+    truncate_text: false
+    type: looker_grid
+    width: 8
+  - col: 8
+    column_limit: 50
+    comparison_reverse_colors: false
+    comparison_type: value
+    conditional_formatting_include_nulls: false
+    conditional_formatting_include_totals: false
+    custom_color: '#FFFFFF'
+    custom_color_enabled: true
+    defaults_version: 1
+    dynamic_fields:
+    - _kind_hint: measure
+      _type_hint: number
+      based_on: events.metadata__id
+      expression: ""
+      label: Count of metadata.id
+      measure: count_of_metadataid
+      type: count_distinct
+    - _kind_hint: measure
+      _type_hint: number
+      based_on: events.metadata__id
+      category: measure
+      expression: ""
+      label: Count
+      measure: count
+      type: count_distinct
+    enable_conditional_formatting: false
+    explore: events_connector
+    fields:
+    - count
+    filters:
+      events.metadata__log_type: EXTRAHOP
+      events.metadata__product_name: RevealX
+    height: 4
+    hidden_pivots: {}
+    limit: 1
+    listen:
+      Time: events.time_filter
+    model: scn
+    name: Total Detection Events
+    row: 0
+    show_comparison: false
+    show_comparison_label: true
+    show_single_value_title: true
+    title: Total Detection Events
+    type: single_value
+    width: 8
+  - col: 16
+    column_limit: 50
+    comparison_reverse_colors: false
+    comparison_type: value
+    conditional_formatting_include_nulls: false
+    conditional_formatting_include_totals: false
+    custom_color: '#FFFFFF'
+    custom_color_enabled: true
+    defaults_version: 1
+    dynamic_fields:
+    - _kind_hint: measure
+      _type_hint: number
+      based_on: events__security_result.risk_score
+      expression: ""
+      label: Max of security_result.risk_score
+      measure: max_of_security_resultrisk_score
+      type: max
+    enable_conditional_formatting: false
+    explore: events_connector
+    fields:
+    - max_of_security_resultrisk_score
+    filters:
+      events.metadata__log_type: EXTRAHOP
+      events.metadata__product_name: RevealX
+    height: 4
+    limit: 1
+    listen:
+      Time: events.time_filter
+    model: scn
+    name: Maximum Risk Score
+    row: 0
+    show_comparison: false
+    show_comparison_label: true
+    show_single_value_title: true
+    title: Maximum Risk Score
+    type: single_value
+    width: 8
+  - col: 16
+    color_application:
+      collection_id: 7c56cc21-66e4-41c9-81ce-a60e1c3967b2
+      palette_id: 5d189dfc-4f46-46f3-822b-bfb0b61777b1
+    column_limit: 50
+    conditional_formatting_include_nulls: false
+    conditional_formatting_include_totals: false
+    defaults_version: 1
+    dynamic_fields:
+    - _kind_hint: measure
+      _type_hint: number
+      based_on: events.metadata__id
+      expression: ""
+      label: Count of metadata.id
+      measure: count_of_metadataid
+      type: count_distinct
+    - _kind_hint: measure
+      _type_hint: number
+      based_on: events.metadata__id
+      category: measure
+      expression: ""
+      label: Count
+      measure: count
+      type: count_distinct
+    enable_conditional_formatting: false
+    explore: events_connector
+    fields:
+    - events__security_result__attack_details__techniques.name
+    - count
+    filters:
+      events.metadata__log_type: EXTRAHOP
+      events.metadata__product_name: RevealX
+      events__security_result__attack_details__techniques.name: -NULL
+    header_background_color: ""
+    header_font_color: '#000000'
+    header_font_size: "14"
+    header_text_alignment: left
+    height: 7
+    hidden_pivots: {}
+    hide_row_totals: false
+    hide_totals: false
+    limit: 10
+    limit_displayed_rows: false
+    limit_displayed_rows_values:
+      first_last: first
+      num_rows: 0
+      show_hide: hide
+    listen:
+      Time: events.time_filter
+    minimum_column_width: 75
+    model: scn
+    name: Top MITRE Techniques
+    row: 4
+    rows_font_size: "12"
+    series_cell_visualizations:
+      count_of_metadataid:
+        is_active: true
+    series_column_widths:
+      events__security_result__attack_details__techniques.name: 240
+    series_labels:
+      count_of_metadataid: Count
+      events__security_result__attack_details__techniques.name: MITRE Category
+    series_text_format:
+      count:
+        align: left
+      count_of_metadataid:
+        align: left
+    show_row_numbers: false
+    show_row_totals: true
+    show_sql_query_menu_options: false
+    show_totals: true
+    show_view_names: false
+    size_to_fit: true
+    sorts:
+    - count desc 0
+    table_theme: editable
+    title: Top MITRE Techniques
+    transpose: false
+    truncate_header: false
+    truncate_text: true
+    type: looker_grid
+    width: 8
+  - col: 0
+    column_limit: 50
+    conditional_formatting:
+    - background_color: '#1A73E8'
+      bold: false
+      color_application:
+        collection_id: 7c56cc21-66e4-41c9-81ce-a60e1c3967b2
+        palette_id: 56d0c358-10a0-4fd6-aa0b-b117bef527ab
+      fields: null
+      font_color: null
+      italic: false
+      strikethrough: false
+      type: along a scale...
+      value: null
+    conditional_formatting_include_nulls: false
+    conditional_formatting_include_totals: false
+    defaults_version: 1
+    dynamic_fields:
+    - _kind_hint: measure
+      _type_hint: number
+      based_on: events.metadata__id
+      expression: ""
+      label: Count of metadata.id
+      measure: count_of_metadataid
+      type: count_distinct
+    - _kind_hint: measure
+      _type_hint: number
+      based_on: events.metadata__id
+      category: measure
+      expression: ""
+      label: Count
+      measure: count
+      type: count_distinct
+    enable_conditional_formatting: false
+    explore: events_connector
+    fields:
+    - events.principal__hostname
+    - count
+    filters:
+      events.metadata__log_type: EXTRAHOP
+      events.metadata__product_name: RevealX
+      events.principal__hostname: -NULL
+    header_font_color: '#000000'
+    header_font_size: "14"
+    header_text_alignment: left
+    height: 7
+    hidden_pivots: {}
+    hide_row_totals: false
+    hide_totals: false
+    limit: 10
+    limit_displayed_rows: false
+    listen:
+      Time: events.time_filter
+    minimum_column_width: 75
+    model: scn
+    name: Top Sources
+    row: 11
+    rows_font_size: "12"
+    series_cell_visualizations:
+      count_of_metadataid:
+        is_active: false
+    series_column_widths:
+      events.principal__hostname: 270
+    series_labels:
+      count_of_metadataid: Count
+      events.principal__hostname: Host
+    series_text_format:
+      count:
+        align: left
+      count_of_metadataid:
+        align: left
+    show_row_numbers: false
+    show_row_totals: true
+    show_sql_query_menu_options: false
+    show_totals: true
+    show_view_names: false
+    size_to_fit: true
+    sorts:
+    - count desc
+    table_theme: editable
+    title: Top Sources
+    transpose: false
+    truncate_header: false
+    truncate_text: true
+    type: looker_grid
+    width: 12
+  - col: 12
+    column_limit: 50
+    conditional_formatting:
+    - background_color: '#1A73E8'
+      bold: false
+      color_application:
+        collection_id: 7c56cc21-66e4-41c9-81ce-a60e1c3967b2
+        palette_id: 56d0c358-10a0-4fd6-aa0b-b117bef527ab
+      fields: null
+      font_color: null
+      italic: false
+      strikethrough: false
+      type: along a scale...
+      value: null
+    conditional_formatting_include_nulls: false
+    conditional_formatting_include_totals: false
+    defaults_version: 1
+    dynamic_fields:
+    - _kind_hint: measure
+      _type_hint: number
+      based_on: events.metadata__id
+      expression: ""
+      label: Count of metadata.id
+      measure: count_of_metadataid
+      type: count_distinct
+    - _kind_hint: measure
+      _type_hint: number
+      based_on: events.metadata__id
+      category: measure
+      expression: ""
+      label: Count
+      measure: count
+      type: count_distinct
+    enable_conditional_formatting: false
+    explore: events_connector
+    fields:
+    - events.target__hostname
+    - count
+    filters:
+      events.metadata__log_type: EXTRAHOP
+      events.metadata__product_name: RevealX
+      events.target__hostname: -NULL
+    header_font_color: '#000000'
+    header_font_size: "14"
+    header_text_alignment: left
+    height: 7
+    hidden_pivots: {}
+    hide_row_totals: false
+    hide_totals: false
+    limit: 10
+    limit_displayed_rows: false
+    listen:
+      Time: events.time_filter
+    minimum_column_width: 75
+    model: scn
+    name: Top Destinations
+    row: 11
+    rows_font_size: "12"
+    series_cell_visualizations:
+      count_of_metadataid:
+        is_active: false
+    series_column_widths:
+      events.target__hostname: 270
+    series_labels:
+      count_of_metadataid: Count
+      events.principal__hostname: Host
+      events.target__hostname: Host
+    series_text_format:
+      count:
+        align: left
+      count_of_metadataid:
+        align: left
+    show_row_numbers: false
+    show_row_totals: true
+    show_sql_query_menu_options: false
+    show_totals: true
+    show_view_names: false
+    size_to_fit: true
+    sorts:
+    - count desc
+    table_theme: editable
+    title: Top Destinations
+    transpose: false
+    truncate_header: false
+    truncate_text: true
+    type: looker_grid
+    width: 12
+  - col: 0
+    column_limit: 50
+    conditional_formatting_include_nulls: false
+    conditional_formatting_include_totals: false
+    defaults_version: 1
+    dynamic_fields:
+    - _kind_hint: measure
+      _type_hint: number
+      based_on: events.metadata__id
+      expression: ""
+      label: Count of metadata.id
+      measure: count_of_metadataid
+      type: count_distinct
+    enable_conditional_formatting: false
+    explore: events_connector
+    fields:
+    - events.metadata__product_log_id
+    - events__security_result.risk_score
+    - events__security_result.summary
+    - events__security_result__detection_fields.value
+    - events.principal__hostname
+    - events.target__hostname
+    - events__security_result.url_back_to_product
+    - events.metadata__event_timestamp_time
+    - events__additional__fields.value__string_value
+    filters:
+      events.metadata__log_type: EXTRAHOP
+      events.metadata__product_name: RevealX
+      events__additional__fields.key: assignee
+      events__security_result__detection_fields.key: '"categories_string"'
+    header_font_size: "14"
+    header_text_alignment: left
+    height: 8
+    hidden_pivots: {}
+    hide_row_totals: false
+    hide_totals: false
+    limit: 5000
+    limit_displayed_rows: false
+    listen:
+      Time: events.time_filter
+    minimum_column_width: 75
+    model: scn
+    name: Recent Detection Events
+    row: 25
+    rows_font_size: "12"
+    series_labels:
+      events.metadata__event_timestamp_time: Detection Generated Time
+      events.metadata__product_log_id: Detection ID
+      events.principal__hostname: Source Host
+      events.target__hostname: Destination Host
+      events__additional__fields.key: Assignee
+      events__additional__fields.value__string_value: Assignee
+      events__security_result.first_discovered_time_time: Detection Generated Time
+      events__security_result.risk_score: Risk Score
+      events__security_result.summary: Detection Title
+      events__security_result.url_back_to_product: Detection URL
+      events__security_result__detection_fields.value: Categories
+    show_row_numbers: false
+    show_row_totals: true
+    show_sql_query_menu_options: false
+    show_totals: true
+    show_view_names: false
+    size_to_fit: true
+    sorts:
+    - events.metadata__event_timestamp_time desc
+    table_theme: editable
+    title: Recent Detection Events
+    transpose: false
+    truncate_column_names: false
+    truncate_header: false
+    truncate_text: false
+    type: looker_grid
+    width: 24
+  - col: 0
+    column_limit: 50
+    defaults_version: 0
+    draw_map_labels_above_data: true
+    dynamic_fields:
+    - _kind_hint: dimension
+      _type_hint: string
+      category: table_calculation
+      expression: ${events__principal__ip_geo_artifact.ip}
+      label: IP
+      table_calculation: ip
+      value_format: null
+      value_format_name: null
+    - _kind_hint: measure
+      _type_hint: number
+      based_on: events__principal__ip_geo_artifact.ip
+      category: measure
+      expression: ""
+      label: Count
+      measure: count
+      type: count_distinct
+    explore: events_connector
+    fields:
+    - events__principal__ip_geo_artifact.ip
+    - events__principal__ip_geo_artifact.location__region_coordinates
+    - count
+    filters:
+      events.metadata__log_type: EXTRAHOP
+      events.metadata__product_name: RevealX
+      events__principal__ip_geo_artifact.ip: -NULL
+    heatmap_gridlines: false
+    heatmap_gridlines_empty: false
+    heatmap_opacity: 0.5
+    height: 7
+    hidden_fields:
+    - events__principal__ip_geo_artifact.ip
+    hidden_pivots: {}
+    hidden_points_if_no: []
+    limit: 5000
+    listen:
+      Time: events.time_filter
+    map_marker_color:
+    - red
+    map_marker_color_mode: fixed
+    map_marker_icon_name: default
+    map_marker_proportional_scale_type: linear
+    map_marker_radius_mode: proportional_value
+    map_marker_type: circle
+    map_marker_units: pixels
+    map_pannable: true
+    map_plot_mode: points
+    map_position: fit_data
+    map_tile_provider: light
+    map_zoomable: true
+    model: scn
+    name: Source IP Map
+    quantize_map_value_colors: false
+    reverse_map_value_colors: false
+    row: 18
+    series_labels: {}
+    show_legend: true
+    show_region_field: true
+    show_view_names: true
+    sorts:
+    - count desc 0
+    title: Source IP Map
+    type: looker_google_map
+    width: 12
+  - col: 12
+    column_limit: 50
+    defaults_version: 0
+    draw_map_labels_above_data: true
+    dynamic_fields:
+    - _kind_hint: dimension
+      _type_hint: string
+      category: table_calculation
+      expression: ${events__target__ip_geo_artifact.ip}
+      label: IP
+      table_calculation: ip
+      value_format: null
+      value_format_name: null
+    - _kind_hint: measure
+      _type_hint: number
+      based_on: events__target__ip_geo_artifact.ip
+      category: measure
+      expression: ""
+      label: Count
+      measure: count
+      type: count_distinct
+    explore: events_connector
+    fields:
+    - events__target__ip_geo_artifact.ip
+    - events__target__ip_geo_artifact.location__region_coordinates
+    - count
+    filters:
+      events.metadata__log_type: EXTRAHOP
+      events.metadata__product_name: RevealX
+      events__target__ip_geo_artifact.ip: -NULL
+    heatmap_gridlines: false
+    heatmap_gridlines_empty: false
+    heatmap_opacity: 0.5
+    height: 7
+    hidden_fields:
+    - events__target__ip_geo_artifact.ip
+    hidden_points_if_no: []
+    limit: 5000
+    listen:
+      Time: events.time_filter
+    map_marker_color:
+    - red
+    map_marker_color_mode: fixed
+    map_marker_icon_name: default
+    map_marker_proportional_scale_type: linear
+    map_marker_radius_max: null
+    map_marker_radius_mode: proportional_value
+    map_marker_type: circle
+    map_marker_units: pixels
+    map_pannable: true
+    map_plot_mode: points
+    map_position: fit_data
+    map_tile_provider: light
+    map_zoomable: true
+    model: scn
+    name: Destination IP Map
+    quantize_map_value_colors: false
+    reverse_map_value_colors: false
+    row: 18
+    series_labels: {}
+    show_legend: true
+    show_region_field: true
+    show_view_names: true
+    sorts:
+    - count desc 0
+    title: Destination IP Map
+    type: looker_google_map
+    width: 12
+  filters:
+  - allow_multiple_values: true
+    default_value: 1 month
+    explore: events_connector
+    field: events.time_filter
+    listens_to_filters: []
+    model: scn
+    name: Time
+    required: false
+    title: Time
+    type: field_filter
+    ui_config:
+      display: popover
+      options: []
+      type: advanced
+  layout: newspaper
+  title: ExtraHop RevealX
+metadata:
+  exported_at: "2025-01-16T21:11:05-08:00"
+  file_fingerprint: "37159164836574397433688740542797207732"
+  looker_version: 24.18.128
+  version: "1"
