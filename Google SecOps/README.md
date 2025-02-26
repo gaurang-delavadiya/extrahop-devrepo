@@ -1,8 +1,8 @@
-# ExtraHop resources for extended integrations
+# ExtraHop Resources for Extended Integrations
 
 ## Dashboards
 
-You can visualize and analyze ingested data by creating dashboards in SecOps SIEM.
+You can visualize and analyze ingested data by creating dashboards in Google SecOps SIEM.
 
 ### Import a Dashboard into Google SecOps SIEM
 
@@ -16,11 +16,11 @@ See [Import Dashboards into Google SecOps](https://cloud.google.com/chronicle/do
 
 ## Create Correlation Rules for Detections and Alerts
 
-Correlation rules scan events ingested into the SecOps SIEM to generate detections and alerts for specified anomalies. ExtraHop RevealX provides three rules that you can modify or copy to get started. You can find the ExtraHop RevealX correlation rules in the following [GitHub](https://github.com/ExtraHop/extrahop-devrepo/tree/main/Correlation%20Rules) repository.
+Correlation rules scan events ingested into Google SecOps SIEM to generate detections and alerts for specified anomalies. ExtraHop RevealX provides three rules that you can modify or copy to get started. You can find the ExtraHop RevealX correlation rules in the following [GitHub](https://github.com/ExtraHop/extrahop-devrepo/tree/main/Correlation%20Rules) repository.
 
-### Create a new correlation rule
+### Create a New Correlation Rule
 
-1. From the SecOps SIEM, navigate to **Detections > Rules & Detections**.
+1. From Google SecOps SIEM, navigate to **Detections > Rules & Detections**.
 2. From the **Rules Editor** tab, click **New**.
 3. In the rule editor, clear all the contents, and then copy and paste the code from the GitHub repository.
 4. Click **Save New Rule**.
