@@ -6,7 +6,6 @@ rule extrahop_revealx_medium_severity {
 
   events:
     $event.metadata.log_type = "EXTRAHOP"
-    $event.metadata.product_name = "RevealX"
     $event.security_result.priority = "HIGH_PRIORITY"
     $event.security_result.risk_score >= 30 AND $event.security_result.risk_score < 80
     $event_risk_score = $event.security_result.risk_score
