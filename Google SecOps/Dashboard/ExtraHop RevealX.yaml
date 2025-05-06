@@ -41,7 +41,6 @@ lookml:
     - count_1
     filters:
       events.metadata__log_type: EXTRAHOP
-      events.metadata__product_name: RevealX
       events__security_result__category_details.events__security_result__category_details: -NULL
     height: 7
     hidden_pivots: {}
@@ -107,7 +106,6 @@ lookml:
     - count
     filters:
       events.metadata__log_type: EXTRAHOP
-      events.metadata__product_name: RevealX
       events__security_result.priority_enum_name: '"HIGH_PRIORITY"'
     header_font_size: 12
     header_text_alignment: left
@@ -166,7 +164,6 @@ lookml:
     - count
     filters:
       events.metadata__log_type: EXTRAHOP
-      events.metadata__product_name: RevealX
       events__security_result.priority_enum_name: '"HIGH_PRIORITY"'
       events__security_result.summary: -NULL
     header_font_color: '#000000'
@@ -251,7 +248,6 @@ lookml:
     - count
     filters:
       events.metadata__log_type: EXTRAHOP
-      events.metadata__product_name: RevealX
     height: 4
     hidden_pivots: {}
     limit: 1
@@ -289,7 +285,6 @@ lookml:
     - max_of_security_resultrisk_score
     filters:
       events.metadata__log_type: EXTRAHOP
-      events.metadata__product_name: RevealX
     height: 4
     limit: 1
     listen:
@@ -334,7 +329,6 @@ lookml:
     - count
     filters:
       events.metadata__log_type: EXTRAHOP
-      events.metadata__product_name: RevealX
       events__security_result__attack_details__techniques.name: -NULL
     header_background_color: ""
     header_font_color: '#000000'
@@ -425,7 +419,6 @@ lookml:
     - count
     filters:
       events.metadata__log_type: EXTRAHOP
-      events.metadata__product_name: RevealX
       events.principal__hostname: -NULL
     header_font_color: '#000000'
     header_font_size: "14"
@@ -511,7 +504,6 @@ lookml:
     - count
     filters:
       events.metadata__log_type: EXTRAHOP
-      events.metadata__product_name: RevealX
       events.target__hostname: -NULL
     header_font_color: '#000000'
     header_font_size: "14"
@@ -580,12 +572,11 @@ lookml:
     - events__security_result__detection_fields.value
     - events.principal__hostname
     - events.target__hostname
-    - events__security_result.url_back_to_product
+    - events.principal__url
     - events.metadata__event_timestamp_time
     - events__additional__fields.value__string_value
     filters:
       events.metadata__log_type: EXTRAHOP
-      events.metadata__product_name: RevealX
       events__additional__fields.key: assignee
       events__security_result__detection_fields.key: '"categories_string"'
     header_font_size: "14"
@@ -607,6 +598,7 @@ lookml:
       events.metadata__event_timestamp_time: Detection Generated Time
       events.metadata__product_log_id: Detection ID
       events.principal__hostname: Source Host
+      events.principal__url: Detection URL
       events.target__hostname: Destination Host
       events__additional__fields.key: Assignee
       events__additional__fields.value__string_value: Assignee
@@ -659,7 +651,6 @@ lookml:
     - count
     filters:
       events.metadata__log_type: EXTRAHOP
-      events.metadata__product_name: RevealX
       events__principal__ip_geo_artifact.ip: -NULL
     heatmap_gridlines: false
     heatmap_gridlines_empty: false
@@ -727,7 +718,6 @@ lookml:
     - count
     filters:
       events.metadata__log_type: EXTRAHOP
-      events.metadata__product_name: RevealX
       events__target__ip_geo_artifact.ip: -NULL
     heatmap_gridlines: false
     heatmap_gridlines_empty: false
@@ -785,7 +775,7 @@ lookml:
   layout: newspaper
   title: ExtraHop RevealX
 metadata:
-  exported_at: "2025-01-16T21:11:05-08:00"
-  file_fingerprint: "37159164836574397433688740542797207732"
-  looker_version: 24.18.128
+  exported_at: "2025-05-06T02:21:22-07:00"
+  file_fingerprint: "181538826183301269804211384540082673482"
+  looker_version: 25.0.55
   version: "1"
