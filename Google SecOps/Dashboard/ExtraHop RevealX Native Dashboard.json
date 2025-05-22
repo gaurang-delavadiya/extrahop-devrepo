@@ -1,0 +1,783 @@
+{
+    "dashboards": [
+        {
+            "dashboard": {
+                "name": "07e49c03-c11d-4766-be9b-9c4322ee1129",
+                "displayName": "ExtraHop RevealX",
+                "definition": {
+                    "filters": [
+                        {
+                            "id": "GlobalTimeFilter",
+                            "dataSource": "GLOBAL",
+                            "filterOperatorAndFieldValues": [
+                                {
+                                    "filterOperator": "PAST",
+                                    "fieldValues": [
+                                        "1",
+                                        "DAY"
+                                    ]
+                                }
+                            ],
+                            "displayName": "Global Time Filter",
+                            "chartIds": [
+                                "c97d1421-1de7-4f9a-bc76-df6e2137716e",
+                                "ce078067-1bdc-4163-a5ee-09ab1b13c841",
+                                "cbfbc296-cdbb-4b40-9762-4756389538c8",
+                                "52879470-8fd2-4239-b865-ce8e636ff77c",
+                                "a4ad5387-c510-4e36-9f06-9e6e547bd1ab",
+                                "7706e25b-1175-42e2-a3de-1aaa47f55e62",
+                                "f75982e1-9bc7-4eac-876b-e3cb22691b1d",
+                                "cb89799f-56e1-4501-8922-36d9c61f5416",
+                                "59b824c1-6409-47f5-b4b9-64f5d08dc6a7",
+                                "cd454f04-dd93-4eb2-ab3d-e8e3a9970174",
+                                "0d217260-3397-4e3d-a60a-e2ab2d4f5e15"
+                            ],
+                            "isStandardTimeRangeFilter": true,
+                            "isStandardTimeRangeFilterEnabled": true
+                        }
+                    ],
+                    "charts": [
+                        {
+                            "dashboardChart": "52879470-8fd2-4239-b865-ce8e636ff77c",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 31,
+                                "startY": 0,
+                                "spanY": 16
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "ce078067-1bdc-4163-a5ee-09ab1b13c841",
+                            "chartLayout": {
+                                "startX": 31,
+                                "spanX": 33,
+                                "startY": 0,
+                                "spanY": 16
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "cbfbc296-cdbb-4b40-9762-4756389538c8",
+                            "chartLayout": {
+                                "startX": 64,
+                                "spanX": 32,
+                                "startY": 0,
+                                "spanY": 16
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "c97d1421-1de7-4f9a-bc76-df6e2137716e",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 96,
+                                "startY": 88,
+                                "spanY": 29
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "cb89799f-56e1-4501-8922-36d9c61f5416",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 48,
+                                "startY": 64,
+                                "spanY": 24
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "f75982e1-9bc7-4eac-876b-e3cb22691b1d",
+                            "chartLayout": {
+                                "startX": 48,
+                                "spanX": 48,
+                                "startY": 64,
+                                "spanY": 24
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "59b824c1-6409-47f5-b4b9-64f5d08dc6a7",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 31,
+                                "startY": 16,
+                                "spanY": 25
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "0d217260-3397-4e3d-a60a-e2ab2d4f5e15",
+                            "chartLayout": {
+                                "startX": 31,
+                                "spanX": 33,
+                                "startY": 16,
+                                "spanY": 25
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "7706e25b-1175-42e2-a3de-1aaa47f55e62",
+                            "chartLayout": {
+                                "startX": 64,
+                                "spanX": 32,
+                                "startY": 16,
+                                "spanY": 25
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "cd454f04-dd93-4eb2-ab3d-e8e3a9970174",
+                            "chartLayout": {
+                                "startX": 0,
+                                "spanX": 48,
+                                "startY": 41,
+                                "spanY": 23
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter"
+                            ]
+                        },
+                        {
+                            "dashboardChart": "a4ad5387-c510-4e36-9f06-9e6e547bd1ab",
+                            "chartLayout": {
+                                "startX": 48,
+                                "spanX": 48,
+                                "startY": 41,
+                                "spanY": 23
+                            },
+                            "filtersIds": [
+                                "GlobalTimeFilter"
+                            ]
+                        }
+                    ]
+                },
+                "type": "CUSTOM",
+                "etag": "56a2687a8c7fbe366809f0040a91787f592d34099dc2f849e1c7d780ea4f15b2",
+                "access": "DASHBOARD_PRIVATE"
+            },
+            "dashboardCharts": [
+                {
+                    "name": "f75982e1-9bc7-4eac-876b-e3cb22691b1d",
+                    "displayName": "Destination IP Map",
+                    "chartDatasource": {
+                        "dashboardQuery": "231b9d08-7f89-4ba6-a23e-69d5922a1945",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "MAP",
+                                "encode": {},
+                                "dataLabel": {}
+                            }
+                        ],
+                        "googleMapsConfig": {
+                            "dataSettings": {
+                                "latitudeColumn": "lat",
+                                "longitudeColumn": "long",
+                                "countColumn": "count"
+                            },
+                            "plotMode": "PLOT_MODE_BOTH",
+                            "mapPosition": {
+                                "latitudeValue": 22.792312701720082,
+                                "longitudeValue": -69.92175666804953,
+                                "zoomScaleValue": 2
+                            },
+                            "pointSettings": {
+                                "pointSizeType": "POINT_SIZE_TYPE_FIXED",
+                                "color": "#d93025"
+                            }
+                        }
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "b6eaff6c5d04759e93d23726e6cd2e419fcdc803b208b2119a3a0969c9ca349a"
+                },
+                {
+                    "name": "0d217260-3397-4e3d-a60a-e2ab2d4f5e15",
+                    "displayName": "Top Categories",
+                    "chartDatasource": {
+                        "dashboardQuery": "9ecca304-9db0-464d-8ce1-8c36cd59efc7",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "PIE",
+                                "encode": {
+                                    "value": "count",
+                                    "itemName": "category"
+                                },
+                                "dataLabel": {},
+                                "radius": [
+                                    "40%",
+                                    "70%"
+                                ],
+                                "itemStyle": {
+                                    "color": "undefined"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "top": 12,
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "bd2e169e6a98f1a51e0ee0181a07ffd0309cd45c2f03c5f91f25214c9c7e018f"
+                },
+                {
+                    "name": "59b824c1-6409-47f5-b4b9-64f5d08dc6a7",
+                    "displayName": "Top Recommended Detection Events",
+                    "chartDatasource": {
+                        "dashboardQuery": "039ea59c-58e3-4825-8aec-4fafde540c5a",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "security_result.summary",
+                                "header": "Detection Title"
+                            },
+                            {
+                                "field": "count",
+                                "header": "Count"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "202e10fdb2455afd2234be71ec5c361bc6f7e60e4383ce426dd402744dbe0af0"
+                },
+                {
+                    "name": "cbfbc296-cdbb-4b40-9762-4756389538c8",
+                    "displayName": "Maximum Risk Score",
+                    "chartDatasource": {
+                        "dashboardQuery": "c79d4f63-7d86-4278-a12e-44fe8783bf6e",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": "Maximum Risk Score",
+                                "field": "maximum_risk_score",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_PLAIN_TEXT",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "f0c456f222d122c6dcada1300601052257ae63619cedfe8d86ecc082a5a94dcc"
+                },
+                {
+                    "name": "52879470-8fd2-4239-b865-ce8e636ff77c",
+                    "displayName": "Recommended Detection Events",
+                    "chartDatasource": {
+                        "dashboardQuery": "68a84b27-66d1-43e6-af94-bb30dbc6fb33",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": "Recommended Detection Events",
+                                "field": "recommended_detection_events",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_PLAIN_TEXT",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "6302cb7fad3352434d9e555cbb9d5fc7f9e562fe240d038319a511faa964714c"
+                },
+                {
+                    "name": "cd454f04-dd93-4eb2-ab3d-e8e3a9970174",
+                    "displayName": "Top Sources",
+                    "chartDatasource": {
+                        "dashboardQuery": "6a6e94b3-9e30-465a-bb44-275eca90cd61",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "hostname",
+                                "header": "hostname"
+                            },
+                            {
+                                "field": "count",
+                                "header": "Count"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "67b72b64321c110cda2fdabfacdd01e9c8606991a926f3edb3b74a2fa7bb7e40"
+                },
+                {
+                    "name": "c97d1421-1de7-4f9a-bc76-df6e2137716e",
+                    "displayName": "Recent Detection Events",
+                    "chartDatasource": {
+                        "dashboardQuery": "b5a16d61-2f00-4865-aa7e-3b444e378f1d",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "log_id",
+                                "header": "Detection ID"
+                            },
+                            {
+                                "field": "sec_risk_score",
+                                "header": "Risk Score"
+                            },
+                            {
+                                "field": "summary",
+                                "header": "Detection Title"
+                            },
+                            {
+                                "field": "categories_string",
+                                "header": "Categories"
+                            },
+                            {
+                                "field": "hostname",
+                                "header": "Source Host"
+                            },
+                            {
+                                "field": "target_hostname",
+                                "header": "Destination Host"
+                            },
+                            {
+                                "field": "assignee_label",
+                                "header": "Assignee"
+                            },
+                            {
+                                "field": "url",
+                                "header": "Detection URL"
+                            },
+                            {
+                                "field": "date_hour",
+                                "header": "Detection Generated Time"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "6cefbe83f5cafbb742ade7594d225c5be90470a88b0ec6a1d6aaedd274afb401"
+                },
+                {
+                    "name": "a4ad5387-c510-4e36-9f06-9e6e547bd1ab",
+                    "displayName": "Top Destinations",
+                    "chartDatasource": {
+                        "dashboardQuery": "ab4dec43-ff8f-48d1-be6f-38249aed921e",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "hostname",
+                                "header": "hostname"
+                            },
+                            {
+                                "field": "count",
+                                "header": "Count"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "b61137543246ce9f588734f4f65ce10dfbd642db753972d90d91e3f2ca22bb15"
+                },
+                {
+                    "name": "7706e25b-1175-42e2-a3de-1aaa47f55e62",
+                    "displayName": "Top MITRE Techniques",
+                    "chartDatasource": {
+                        "dashboardQuery": "48e7d572-4d4e-4193-8b2c-9537a2b94aa4",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "columnDefs": [
+                            {
+                                "field": "security_result.attack_details.techniques.name",
+                                "header": "MITRE Category"
+                            },
+                            {
+                                "field": "count",
+                                "header": "Count"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "e7c1a035f63d276ebc0985f27e6d48be07cd707d2f5ae0ffcbcccec53eaff61c"
+                },
+                {
+                    "name": "ce078067-1bdc-4163-a5ee-09ab1b13c841",
+                    "displayName": "Total Detection Events",
+                    "chartDatasource": {
+                        "dashboardQuery": "c868e468-a16b-4c4f-8be5-0cf948c9e48e",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "TEXT",
+                                "label": "Total Detection Events",
+                                "field": "total_detection_events",
+                                "metricTrendConfig": {
+                                    "metricFormat": "METRIC_FORMAT_PLAIN_TEXT",
+                                    "metricDisplayTrend": "METRIC_DISPLAY_TREND_ABSOLUTE_VALUE",
+                                    "metricTrendType": "METRIC_TREND_TYPE_REGULAR"
+                                }
+                            }
+                        ],
+                        "xAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "yAxes": [
+                            {
+                                "axisType": "VALUE"
+                            }
+                        ],
+                        "legends": [
+                            {
+                                "legendOrient": "HORIZONTAL"
+                            }
+                        ],
+                        "groupingType": "Off"
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "ead06086348582c91e1631243983432ef5f7afdfc65dbe1e3e8046930227cbc9"
+                },
+                {
+                    "name": "cb89799f-56e1-4501-8922-36d9c61f5416",
+                    "displayName": "Source IP Map",
+                    "chartDatasource": {
+                        "dashboardQuery": "33b12f5f-8f48-4883-8dfd-7eb8865ae410",
+                        "dataSources": [
+                            "UDM"
+                        ]
+                    },
+                    "visualization": {
+                        "series": [
+                            {
+                                "seriesType": "MAP",
+                                "encode": {},
+                                "dataLabel": {}
+                            }
+                        ],
+                        "googleMapsConfig": {
+                            "dataSettings": {
+                                "latitudeColumn": "lat",
+                                "longitudeColumn": "long",
+                                "countColumn": "count"
+                            },
+                            "plotMode": "PLOT_MODE_BOTH",
+                            "mapPosition": {
+                                "latitudeValue": 15.4741450560984,
+                                "longitudeValue": 102.77429800711917,
+                                "zoomScaleValue": 3.0572318933017306
+                            },
+                            "pointSettings": {
+                                "pointSizeType": "POINT_SIZE_TYPE_FIXED",
+                                "color": "#d93025"
+                            }
+                        }
+                    },
+                    "tileType": "TILE_TYPE_VISUALIZATION",
+                    "etag": "bdc4b9a5b1209a06041579218127d154d334f29b9b07258b6343db64cd4a53dc"
+                }
+            ],
+            "dashboardQueries": [
+                {
+                    "name": "ab4dec43-ff8f-48d1-be6f-38249aed921e",
+                    "query": "metadata.log_type = \"EXTRAHOP\"\r\n$hostname = if(target.hostname = \"\", if(target.ip = \"\", if(target.resource.attribute.labels[\"dst_device_name\"] = \"\", \"-\", target.resource.attribute.labels[\"src_device_name\"]), target.ip), target.hostname)\r\n$hostname != \"-\"\r\nmatch:\r\n    $hostname\r\noutcome:\r\n    $count = count_distinct(metadata.id)\r\norder:\r\n    $count desc\r\nlimit:\r\n    10",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "HOUR",
+                            "startTimeVal": "24"
+                        }
+                    },
+                    "etag": "7e732dd4baf04cc8e1963c46e809fa7df58b60c227d716dd8881668514273cde"
+                },
+                {
+                    "name": "231b9d08-7f89-4ba6-a23e-69d5922a1945",
+                    "query": "metadata.log_type = \"EXTRAHOP\"\r\ntarget.ip_geo_artifact.ip != \"\"\r\n$lat = target.ip_geo_artifact.location.region_coordinates.latitude\r\n$long = target.ip_geo_artifact.location.region_coordinates.longitude\r\n$target_ip = target.ip_geo_artifact.ip\r\nmatch:\r\n    $target_ip, $lat, $long\r\noutcome:\r\n    $count = count($target_ip)\r\norder:\r\n    $count desc",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "HOUR",
+                            "startTimeVal": "24"
+                        }
+                    },
+                    "etag": "3fec413a5b533699ddc1984721dbe2518ed4b0a63a6a6a6214ba7b9c72295965"
+                },
+                {
+                    "name": "039ea59c-58e3-4825-8aec-4fafde540c5a",
+                    "query": "metadata.log_type = \"EXTRAHOP\"\r\nsecurity_result.priority = \"HIGH_PRIORITY\"\r\nsecurity_result.summary != \"\"\r\nmatch:\r\n    security_result.summary\r\noutcome:\r\n    $count = count(metadata.id)\r\norder:\r\n    $count desc\r\nlimit:\r\n    10",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "HOUR",
+                            "startTimeVal": "24"
+                        }
+                    },
+                    "etag": "f1b90d3209cfebb38eca11bb9d675012ebd4fda52b40b4564ae3cb770905ba00"
+                },
+                {
+                    "name": "6a6e94b3-9e30-465a-bb44-275eca90cd61",
+                    "query": "metadata.log_type = \"EXTRAHOP\"\r\n$hostname = if(principal.hostname = \"\", if(principal.ip = \"\", if(principal.resource.attribute.labels[\"src_device_name\"] = \"\", \"-\", principal.resource.attribute.labels[\"src_device_name\"]), principal.ip), principal.hostname)\r\n$hostname != \"-\"\r\nmatch:\r\n    $hostname\r\noutcome:\r\n    $count = count_distinct(metadata.id)\r\norder:\r\n    $count desc\r\nlimit:\r\n    10",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "HOUR",
+                            "startTimeVal": "24"
+                        }
+                    },
+                    "etag": "0744ec11b571adf3eb89051a414dc76606aad69171de917ce20593da4bd0a672"
+                },
+                {
+                    "name": "9ecca304-9db0-464d-8ce1-8c36cd59efc7",
+                    "query": "metadata.log_type = \"EXTRAHOP\"\r\nsecurity_result.category_details != \"\"\r\nmatch:\r\n    security_result.category_details\r\noutcome:\r\n    $category = array_distinct(security_result.category_details)\r\n    $count = count_distinct(metadata.id)\r\norder:\r\n    $count desc\r\nlimit:\r\n    10",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "24"
+                        }
+                    },
+                    "etag": "c1af20e1b907688d71591460b6f3492fbbaa8b1e143ad6178b8869940a3bab30"
+                },
+                {
+                    "name": "c79d4f63-7d86-4278-a12e-44fe8783bf6e",
+                    "query": "metadata.log_type = \"EXTRAHOP\"\r\noutcome:\r\n    $maximum_risk_score = max(security_result.risk_score)",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "HOUR",
+                            "startTimeVal": "24"
+                        }
+                    },
+                    "etag": "3b862353402481006f02283fe567ab43a695ba61fcd717eb618f77a518a6d943"
+                },
+                {
+                    "name": "68a84b27-66d1-43e6-af94-bb30dbc6fb33",
+                    "query": "metadata.log_type=\"EXTRAHOP\"\r\nsecurity_result.priority = \"HIGH_PRIORITY\"\r\noutcome:\r\n    $recommended_detection_events = count_distinct(metadata.id)\r\n",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "7"
+                        }
+                    },
+                    "etag": "4906376e53c22efd65d70c23d2d36fe075b416aba9fc893661cf38dfea6411a1"
+                },
+                {
+                    "name": "48e7d572-4d4e-4193-8b2c-9537a2b94aa4",
+                    "query": "metadata.log_type = \"EXTRAHOP\"\r\nsecurity_result.attack_details.techniques.name != \"\"\r\nmatch:\r\n    security_result.attack_details.techniques.name\r\noutcome:\r\n    $count = count_distinct(metadata.id)\r\norder:\r\n    $count desc\r\nlimit:\r\n    10",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "HOUR",
+                            "startTimeVal": "24"
+                        }
+                    },
+                    "etag": "69fddc4c7945f39b6d1db4e94e186af7a2b4c65b61c45815b1b3cd5f3c21a8c8"
+                },
+                {
+                    "name": "c868e468-a16b-4c4f-8be5-0cf948c9e48e",
+                    "query": "metadata.log_type = \"EXTRAHOP\"\r\noutcome:\r\n    $total_detection_events = count_distinct(metadata.id)",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "DAY",
+                            "startTimeVal": "7"
+                        }
+                    },
+                    "etag": "8913a54a33302265f1a698115feeaf407baa682748cddd84d23d7e92213e850a"
+                },
+                {
+                    "name": "b5a16d61-2f00-4865-aa7e-3b444e378f1d",
+                    "query": "metadata.log_type = \"EXTRAHOP\"\r\n$log_id = metadata.product_log_id\r\n$sec_risk_score = security_result.risk_score\r\n$summary = if(security_result.summary = \"\", \"-\", security_result.summary)\r\n$categories_string = if(security_result.detection_fields[\"categories_string\"] = \"\", \"-\", security_result.detection_fields[\"categories_string\"])\r\n$hostname = if(principal.hostname = \"\", if(principal.ip = \"\", if(principal.resource.attribute.labels[\"src_device_name\"] = \"\", \"-\", principal.resource.attribute.labels[\"src_device_name\"]), principal.ip), principal.hostname)\r\n$target_hostname = if(target.hostname = \"\", if(target.ip = \"\", if(target.resource.attribute.labels[\"dst_device_name\"] = \"\", \"-\", target.resource.attribute.labels[\"dst_device_name\"]), target.ip), target.hostname)\r\n$assignee_label = if(additional.fields[\"assignee\"] = \"\", \"-\", additional.fields[\"assignee\"])\r\n$url = if(principal.url = \"\", \"-\", principal.url)\r\n$date_hour=timestamp.get_timestamp(metadata.event_timestamp.seconds, \"%Y-%m-%d  %H:%M:%S\")\r\nmatch:\r\n    $log_id, $sec_risk_score, $summary, $categories_string, $hostname, $target_hostname, $assignee_label, $url, $date_hour\r\norder:\r\n    $date_hour desc",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "MONTH",
+                            "startTimeVal": "3"
+                        }
+                    },
+                    "etag": "2d279d419505dd2589f5d6ae642785283f9ce2658bf523b7ba62f0dcc9f77406"
+                },
+                {
+                    "name": "33b12f5f-8f48-4883-8dfd-7eb8865ae410",
+                    "query": "metadata.log_type = \"EXTRAHOP\"\r\nprincipal.ip_geo_artifact.ip != \"\"\r\n$lat = principal.ip_geo_artifact.location.region_coordinates.latitude\r\n$long = principal.ip_geo_artifact.location.region_coordinates.longitude\r\n$principal_ip = principal.ip_geo_artifact.ip\r\nmatch:\r\n    $principal_ip, $lat, $long\r\noutcome:\r\n    $count = count($principal_ip)\r\norder:\r\n    $count desc",
+                    "input": {
+                        "relativeTime": {
+                            "timeUnit": "HOUR",
+                            "startTimeVal": "24"
+                        }
+                    },
+                    "etag": "b8fa1d1a2779fe5706fdca0733128fd0390f05cf37ea9be1cb09aa92089389c7"
+                }
+            ]
+        }
+    ]
+}
