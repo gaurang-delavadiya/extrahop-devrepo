@@ -4,16 +4,6 @@
 
 You can visualize and analyze ingested data by creating dashboards in Google SecOps SIEM.
 
-### Import a Dashboard into Google SecOps SIEM
-
-Complete the following steps to import a dashboard:
-
-1. Download the dashboard `.yaml` file for ExtraHop RevealX from the following [GitHub](https://github.com/ExtraHop/extrahop-devrepo/tree/main/Dashboard) repository.
-2. Click the **SIEM Dashboards** section from the navigation panel.
-3. Click **Add** and then select **Import Dashboard**.
-
-See [Import Dashboards into Google SecOps](https://cloud.google.com/chronicle/docs/reports/import-export-dashboards#import_dashboards) for more information.
-
 ### Import a Native Dashboard into Google SecOps SIEM
 
 Complete the following steps to import a dashboard:
